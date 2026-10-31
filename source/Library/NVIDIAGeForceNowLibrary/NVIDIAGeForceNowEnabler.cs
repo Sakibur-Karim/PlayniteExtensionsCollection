@@ -274,7 +274,7 @@ namespace NVIDIAGeForceNowEnabler
                     continue;
                 }
 
-                foreach (var itemVariant in geforceNowItem.Variants)
+                foreach (var itemVariant in geforceNowItem.Variants ?? new List<GeforceNowItemVariant>())
                 {
                     if (itemVariant.OsType != OsType.Windows)
                     {
